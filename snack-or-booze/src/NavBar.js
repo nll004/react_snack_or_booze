@@ -13,6 +13,9 @@ function NavBar() {
 
         <Nav className="ml-auto" navbar>
           <NavItem>
+            <NavLink to="/drinks">Drinks</NavLink>
+          </NavItem>
+          <NavItem>
             <NavLink to="/snacks">Snacks</NavLink>
           </NavItem>
         </Nav>
