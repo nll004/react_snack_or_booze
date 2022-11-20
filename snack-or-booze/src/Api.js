@@ -21,6 +21,24 @@ class SnackOrBoozeApi {
     return result.data;
   }
 
+  /** Add a snack or drink to API database
+   * @param {string} itemType Either "drink" or "snack" to complete url for POST request
+   * @param {object} newItem Object with snack information. This is the body of the POST request
+  */
+
+  static async addSnack(itemType, newItem){
+    try{
+      await axios.post(`${BASE_API_URL}/${itemType}`, {
+        id: newItem.id,
+        name: newItem.name,
+        description: newItem.description,
+        recipe: newItem.recipe,
+        serve: newItem.serve
+      });
+    } catch(err) {
+        console.error(err);
+    }
+  }
 }
 
 export default SnackOrBoozeApi;

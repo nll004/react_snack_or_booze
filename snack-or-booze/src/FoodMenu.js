@@ -13,6 +13,7 @@ import {
 const snackIntro = "Made daily with fresh, local ingredients!";
 const drinkIntro = "Expertly mixed by our excellent cocktail servers!";
 
+
 function FoodMenu({ foodItems, title }) {
   return (
     <section className="col-md-4">

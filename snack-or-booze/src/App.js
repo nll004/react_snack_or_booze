@@ -4,6 +4,7 @@ import "./App.css";
 import Home from "./Home";
 import SnackOrBoozeApi from "./Api";
 import NavBar from "./NavBar";
+import NewSnackForm from "./NewSnackForm";
 import { Route, Switch } from "react-router-dom";
 import Menu from "./FoodMenu";
 import Snack from "./FoodItem";
@@ -52,6 +53,10 @@ function App() {
 
             <Route path='/drinks/:id'>
               <Snack itemList={drinkList} cantFind="/drinks" />
+            </Route>
+
+            <Route path="/add-item" >
+              <NewSnackForm addSnack={setSnackList} addDrink={setDrinkList}/>
             </Route>
 
             <Route>

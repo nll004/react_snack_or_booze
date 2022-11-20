@@ -13,10 +13,13 @@ function NavBar() {
 
         <Nav className="ml-auto" navbar>
           <NavItem>
-            <NavLink to="/drinks">Drinks</NavLink>
+            <NavLink to="/drinks"> Drinks </NavLink>
           </NavItem>
           <NavItem>
-            <NavLink to="/snacks">Snacks</NavLink>
+            <NavLink to="/snacks"> Snacks </NavLink>
+          </NavItem>
+          <NavItem>
+            <NavLink to='/add-item'> New Item </NavLink>
           </NavItem>
         </Nav>
       </Navbar>
